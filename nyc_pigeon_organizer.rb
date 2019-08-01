@@ -1,3 +1,4 @@
+require "pry"
 def nyc_pigeon_organizer(data)
   binding.pry
   male_names = data[:gender][:male].collect
