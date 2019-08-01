@@ -4,10 +4,14 @@ new_hash = {}
 data.each {|key,value|
   value.each {|secondary_value, names|
     names.each {|name|
-binding.pry    
+  if !new_hash[name]
+    new_hash[name] = {}
+  end
+  if !new_hash[name][key]
+    new_hash[name][key] = []
+  end
+    new_hash[name][key].push(secondary_value.to_s)
     }
   }
 }
-  male_names = data[:gender][:male].collect
-  female_names = data[:gender][:female].collect
 end
