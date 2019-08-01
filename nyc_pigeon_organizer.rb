@@ -14,4 +14,5 @@ data.each {|key,value|
     }
   }
 }
+return new_hash
 end
