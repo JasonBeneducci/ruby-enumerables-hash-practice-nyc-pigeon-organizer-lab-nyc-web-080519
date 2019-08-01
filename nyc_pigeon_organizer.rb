@@ -1,3 +1,4 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  male_names = data[:gender][:male].collect
+  female_names = data[:gender][:female].collect
 end
