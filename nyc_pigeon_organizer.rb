@@ -1,5 +1,6 @@
 require "pry"
 def nyc_pigeon_organizer(data)
+new_hash = {}
 data.each {|key,value|
   value.each {|secondary_value, names|
     names.each {|name|
